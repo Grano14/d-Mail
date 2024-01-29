@@ -37,8 +37,11 @@ function MailList(){
                     style={{ backgroundColor: '#051128', height: `${button.height}px`, textAlign: 'left' }}
                     onClick={() => increaseButtonHeight(button.id)}
                 >
-                    {`Button ${button.id}`} mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm<br />
-                    <Card />
+                    {`Mail ${button.id}`}:  Send: 02/05/2023 at 21:03:34
+                    <Card 
+                      object="Richiesta informazioni."
+                      mailBody="Salve la contatto per richiedere alcune informazioni sul servizio di ...."
+                    />
                 </button>
             ))}
             <button type="button" className="list-group-item list-group-item-action" style={{height: '2090px'}}>A second button item</button>
